@@ -1,8 +1,10 @@
-package OOP.homework_1_2.Units;
+package OOP.homework_1_2_3_4.Units;
+
+import java.util.ArrayList;
 
 public class Sniper extends Shooter {
-    public Sniper(String name) {
-        super(name, 20, 0.6f, 2, 4, 5, 10, 0.5f, 5);
+    public Sniper(String name, ArrayList<Unit> team, int x, int y) {
+        super(name, 20, 0.6f, 4, 4, 5, 10, 0.5f, 5, team, x, y);
     }
 
     @Override
@@ -10,10 +12,6 @@ public class Sniper extends Shooter {
         return "Снайпер";
     }
 
-    @Override
-    public void step() {
-
-    }
 
     @Override
     public String getInfo() {

@@ -1,9 +1,11 @@
-package OOP.homework_1_2.Units;
+package OOP.homework_1_2_3_4.Units;
+
+import java.util.ArrayList;
 
 public class Wizard extends Magican {
 
-    public Wizard(String name) {
-        super(name, 30, 0.7f, 2, 4, 5, 10, 1, 5, 50);
+    public Wizard(String name, ArrayList<Unit> team, int x, int y) {
+        super(name, 20, 0.7f, 2, 2, 5, 10, 1, 5, 50, team, x, y);
     }
 
     @Override
@@ -11,11 +13,6 @@ public class Wizard extends Magican {
         return "Маг";
     }
 
-
-    @Override
-    public void step() {
-
-    }
 
     @Override
     public String getInfo() {

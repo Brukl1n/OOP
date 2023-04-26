@@ -37,3 +37,10 @@
 void step();
 
 String getInfo();
+
+инициатива
+
+x=1 y=1-10
+x=  y=1-10
+
+step для лучника

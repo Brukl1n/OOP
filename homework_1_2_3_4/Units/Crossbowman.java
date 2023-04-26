@@ -1,8 +1,10 @@
-package OOP.homework_1_2.Units;
+package OOP.homework_1_2_3_4.Units;
+
+import java.util.ArrayList;
 
 public class Crossbowman extends Shooter {
-    public Crossbowman(String name) {
-        super(name, 20, 0.5f, 2, 2, 2, 50, 0.5f, 10);
+    public Crossbowman(String name, ArrayList<Unit> team, int x, int y) {
+        super(name, 20, 0.5f, 4, 2, 2, 50, 0.5f, 10, team, x, y);
     }
 
     @Override
@@ -10,10 +12,6 @@ public class Crossbowman extends Shooter {
         return "Арбалетчик";
     }
 
-    @Override
-    public void step() {
-
-    }
 
     @Override
     public String getInfo() {
