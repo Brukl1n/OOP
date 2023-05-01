@@ -1,4 +1,4 @@
-package OOP.homework_1_2_3_4.Game;
+package OOP.homework_1_2_3_4_5.Game;
 
 public class Coordinate {
     public int x, y;

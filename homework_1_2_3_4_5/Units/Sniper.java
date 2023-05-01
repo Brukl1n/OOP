@@ -1,4 +1,4 @@
-package OOP.homework_1_2_3_4.Units;
+package OOP.homework_1_2_3_4_5.Units;
 
 import java.util.ArrayList;
 
@@ -12,10 +12,8 @@ public class Sniper extends Shooter {
         return "Снайпер";
     }
 
-
     @Override
     public String getInfo() {
         return super.getInfo();
     }
-
 }

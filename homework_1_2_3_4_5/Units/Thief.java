@@ -1,9 +1,8 @@
-package OOP.homework_1_2_3_4.Units;
+package OOP.homework_1_2_3_4_5.Units;
 
 import java.util.ArrayList;
 
 public class Thief extends Unit {
-
     public Thief(String name, ArrayList<Unit> team, int x, int y) {
         super(name, 20, 0.8f, 3, 2, 10, team, x, y);
     }
@@ -20,7 +19,6 @@ public class Thief extends Unit {
     void stealth() {
 
     }
-
 
     @Override
     public String getInfo() {

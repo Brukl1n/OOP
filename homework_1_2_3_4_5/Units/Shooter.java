@@ -1,4 +1,4 @@
-package OOP.homework_1_2_3_4.Units;
+package OOP.homework_1_2_3_4_5.Units;
 
 import java.util.ArrayList;
 
@@ -18,9 +18,8 @@ public abstract class Shooter extends Unit {
 
     @Override
     public String getInfo() {
-        return super.getInfo() + " distance:" + distance +
-                " bullets:" + currentCountBullet + "/" + maxCountBullet +
-                " accuracy:" + accuracy;
+        return super.getInfo() + " d:" + distance +
+                " \u27b9:" + currentCountBullet + "/" + maxCountBullet;
     }
 
     @Override

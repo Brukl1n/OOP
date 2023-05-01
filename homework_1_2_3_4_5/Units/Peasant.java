@@ -1,9 +1,8 @@
-package OOP.homework_1_2_3_4.Units;
+package OOP.homework_1_2_3_4_5.Units;
 
 import java.util.ArrayList;
 
 public class Peasant extends Unit {
-
     protected boolean readiness;
 
     public Peasant(String name, ArrayList<Unit> team, int x, int y) {
@@ -16,7 +15,6 @@ public class Peasant extends Unit {
         return "Крестьянин";
     }
 
-
     @Override
     public String getInfo() {
         return super.getInfo();
@@ -25,11 +23,10 @@ public class Peasant extends Unit {
     @Override
     public void step(ArrayList<Unit> enemy) {
         if (readiness) {
-            System.out.println(this + " " + this.name + " ничего не делает");
+            //System.out.println(this + " " + this.name + " ничего не делает");
         }else{
             readiness = true;
-            System.out.println(this + " " + this.name + " находит припасы");
+            //System.out.println(this + " " + this.name + " находит припасы");
         }
     }
-
 }
