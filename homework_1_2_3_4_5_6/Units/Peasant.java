@@ -1,4 +1,4 @@
-package OOP.homework_1_2_3_4_5.Units;
+package OOP.homework_1_2_3_4_5_6.Units;
 
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ public class Peasant extends Unit {
 
     @Override
     public String toString() {
-        return "Крестьянин";
+        return "Пизант";
     }
 
     @Override

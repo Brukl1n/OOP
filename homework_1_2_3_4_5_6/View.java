@@ -1,8 +1,8 @@
-package OOP.homework_1_2_3_4_5;
+package OOP.homework_1_2_3_4_5_6;
 
 import java.util.Collections;
 
-import OOP.homework_1_2_3_4_5.Units.Unit;
+import OOP.homework_1_2_3_4_5_6.Units.Unit;
 
 public class View {
     private static int step = 1;

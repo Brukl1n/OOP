@@ -1,4 +1,4 @@
-package OOP.homework_1_2_3_4_5;
+package OOP.homework_1_2_3_4_5_6;
 
 public class AnsiColors {
     public static final String ANSI_RESET = "\u001B[0m";

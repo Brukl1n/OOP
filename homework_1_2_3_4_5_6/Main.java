@@ -1,4 +1,4 @@
-package OOP.homework_1_2_3_4_5;
+package OOP.homework_1_2_3_4_5_6;
 
 import java.nio.charset.Charset;
 import java.util.ArrayList;
@@ -6,21 +6,21 @@ import java.util.Comparator;
 import java.util.Random;
 import java.util.Scanner;
 
-import OOP.homework_1_2_3_4_5.Units.Crossbowman;
-import OOP.homework_1_2_3_4_5.Units.Monk;
-import OOP.homework_1_2_3_4_5.Units.Names;
-import OOP.homework_1_2_3_4_5.Units.Peasant;
-import OOP.homework_1_2_3_4_5.Units.Sniper;
-import OOP.homework_1_2_3_4_5.Units.Spearman;
-import OOP.homework_1_2_3_4_5.Units.Thief;
-import OOP.homework_1_2_3_4_5.Units.Unit;
-import OOP.homework_1_2_3_4_5.Units.Wizard;
+import OOP.homework_1_2_3_4_5_6.Units.Crossbowman;
+import OOP.homework_1_2_3_4_5_6.Units.Monk;
+import OOP.homework_1_2_3_4_5_6.Units.Names;
+import OOP.homework_1_2_3_4_5_6.Units.Peasant;
+import OOP.homework_1_2_3_4_5_6.Units.Sniper;
+import OOP.homework_1_2_3_4_5_6.Units.Spearman;
+import OOP.homework_1_2_3_4_5_6.Units.Thief;
+import OOP.homework_1_2_3_4_5_6.Units.Unit;
+import OOP.homework_1_2_3_4_5_6.Units.Wizard;
 
 public class Main {
     static public ArrayList<Unit> team1 = new ArrayList<>();
     static public ArrayList<Unit> team2 = new ArrayList<>();
     static public ArrayList<Unit> team3 = new ArrayList<>();
-
+    
     public static void main(String[] args) {
         //ArrayList<Unit> team1 = new ArrayList<>();
         for (int i = 1; i < 11; i++) {
@@ -62,12 +62,10 @@ public class Main {
         team3.addAll(team1);
         team3.addAll(team2);
         team3.sort(new Comparator<Unit>() {
-
             @Override
             public int compare(Unit o1, Unit o2) {
                 return o2.speed - o1.speed;
             }
-            
         });
         System.out.println(Charset.defaultCharset());
         try (Scanner scanner = new Scanner(System.in)) {
@@ -83,7 +81,6 @@ public class Main {
                 }
             }
         }
-        
     }
     private static String getName(){
         return String.valueOf(Names.values()[new Random().nextInt(Names.values().length)]);
